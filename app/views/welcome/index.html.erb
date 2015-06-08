@@ -1,0 +1,15 @@
+<p id="pdf_link"><%= link_to "Download in PDF", index_path(@index, :format => "pdf") %></p>
+
+
+
+<% guest = [ "joyce yu", "michelle yu", "charles yu", "lily yu"] %>
+
+<% guest.each do |guest_name| %>
+	<div class="col-sm-6">
+	 <div class="image-wrapper">
+<%= image_tag "pla1.png", atl: "", class: "image-responsive" %>
+             <p><%= guest_name %></p>
+        </div>
+</div>
+<% end %>
+

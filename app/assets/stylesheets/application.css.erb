@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.data-img-label{
+float: left; 
+  width:120px;
+  padding:10px 30px;
+  font-weight:bold;
+}
+
+body{
+  font-family: helvetica;
+}
+p{
+  font-family: helvetica;
+
+}
+a{
+  font-family: helvetica;
+}
+
+.image-responsive {
+width: 508px;
+height: 618px;
+padding-top: 318px;
+opacity: 1;
+}
+
+.image-wrapper {
+position: relative;
+width: 500px;
+float: left;
+}
+
+.image-wrapper p {
+font-family: helvetica;
+font-size: 40px;
+position: absolute;
+left: 120px;
+top: 440px;
+padding: 10px;
+border: 0px solid black;
+width: 250px;
+text-align: center;
+color: black;
+margin: 5px;
+opacity: 0.7;
+}
+
+
+
+@media print {
+  body {
+    background-color: #FFF;
+  }
+
+  #container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  #line_items {
+    page-break-before: always;
+  }
+  
+  #pdf_link {
+    display: none;
+  }
+}
